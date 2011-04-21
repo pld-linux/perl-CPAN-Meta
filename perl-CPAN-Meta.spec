@@ -8,13 +8,13 @@
 Summary:	CPAN::Meta - the distribution metadata for a CPAN dist
 Summary(pl.UTF-8):	CPAN::Meta - metadane dystrybucji dla CPAN
 Name:		perl-CPAN-Meta
-Version:	2.110580
+Version:	2.110930
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CPAN/DAGOLDEN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a0e629045f5506eb29f6148eb5c9cbef
+# Source0-md5:	1b59dea49d4179b463ac14b0a5d76f62
 URL:		http://search.cpan.org/dist/CPAN-Meta/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -44,15 +44,14 @@ metadata (or distmeta), along with some helpful methods for
 interrogating that data.
 
 %description -l pl.UTF-8
-Dystrybucje oprogramowania wydane do CPAN zawierają plik META.json
-lub (w starszych wersjach) META.yml, opisujący dystrybucję, jej
-zawartość i wymagania do budowania i instalowania dystrybucji.
-Struktura danych zapisanych w pliku META.json jest opisana w
-CPAN::Meta::Spec.
+Dystrybucje oprogramowania wydane do CPAN zawierają plik META.json lub
+(w starszych wersjach) META.yml, opisujący dystrybucję, jej zawartość
+i wymagania do budowania i instalowania dystrybucji. Struktura danych
+zapisanych w pliku META.json jest opisana w CPAN::Meta::Spec.
 
 CPAN::Meta udostępnia prostą klasę reprezentującą te metadane
-dystrybucji (distmeta) wraz z kilkoma przydatnymi metodami do
-badania tych danych.
+dystrybucji (distmeta) wraz z kilkoma przydatnymi metodami do badania
+tych danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
