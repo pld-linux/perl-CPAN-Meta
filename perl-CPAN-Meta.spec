@@ -8,26 +8,27 @@
 Summary:	CPAN::Meta - the distribution metadata for a CPAN dist
 Summary(pl.UTF-8):	CPAN::Meta - metadane dystrybucji dla CPAN
 Name:		perl-CPAN-Meta
-Version:	2.112621
+Version:	2.120921
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/CPAN/DAGOLDEN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	a37c34f3bc650fc7347182ba86ce317d
+Source0:	http://www.cpan.org/modules/by-module/CPAN/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	83d00ee341ca2a6d8d5e5f9d4bd9d41e
 URL:		http://search.cpan.org/dist/CPAN-Meta/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-CPAN-Meta-YAML >= 0.002
+BuildRequires:	perl-CPAN-Meta-Requirements >= 2.121
+BuildRequires:	perl-CPAN-Meta-YAML >= 0.008
 BuildRequires:	perl-File-Temp >= 0.20
-BuildRequires:	perl-JSON-PP >= 2.27103
-BuildRequires:	perl-Parse-CPAN-Meta >= 1.4400
+BuildRequires:	perl-JSON-PP >= 2.27200
+BuildRequires:	perl-Parse-CPAN-Meta >= 1.4403
 BuildRequires:	perl-Scalar-List-Utils
 BuildRequires:	perl-Test-Simple >= 0.96
 BuildRequires:	perl-Version-Requirements >= 0.101020
-BuildRequires:	perl-version >= 0.82
+BuildRequires:	perl-version >= 0.88
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
