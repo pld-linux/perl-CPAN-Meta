@@ -8,13 +8,13 @@
 Summary:	CPAN::Meta - the distribution metadata for a CPAN dist
 Summary(pl.UTF-8):	CPAN::Meta - metadane dystrybucji dla CPAN
 Name:		perl-CPAN-Meta
-Version:	2.120921
+Version:	2.142060
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/CPAN/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	83d00ee341ca2a6d8d5e5f9d4bd9d41e
+# Source0-md5:	38eb74e2b598a6c2dba20c2f800095a2
 URL:		http://search.cpan.org/dist/CPAN-Meta/
 BuildRequires:	perl-ExtUtils-MakeMaker >= 6.31
 BuildRequires:	perl-devel >= 1:5.8.0
@@ -24,7 +24,7 @@ BuildRequires:	perl-CPAN-Meta-Requirements >= 2.121
 BuildRequires:	perl-CPAN-Meta-YAML >= 0.008
 BuildRequires:	perl-File-Temp >= 0.20
 BuildRequires:	perl-JSON-PP >= 2.27200
-BuildRequires:	perl-Parse-CPAN-Meta >= 1.4403
+BuildRequires:	perl-Parse-CPAN-Meta >= 1.4414
 BuildRequires:	perl-Scalar-List-Utils
 BuildRequires:	perl-Test-Simple >= 0.96
 BuildRequires:	perl-Version-Requirements >= 0.101020
