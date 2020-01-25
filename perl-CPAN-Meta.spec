@@ -4,7 +4,6 @@
 #
 %define		pdir	CPAN
 %define		pnam	Meta
-%include	/usr/lib/rpm/macros.perl
 Summary:	CPAN::Meta - the distribution metadata for a CPAN dist
 Summary(pl.UTF-8):	CPAN::Meta - metadane dystrybucji dla CPAN
 Name:		perl-CPAN-Meta
